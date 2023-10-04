@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.unity.textmeshpro": "3.0.6",
     "com.unity.xr.interaction.toolkit": "2.4.3",
     "com.unity.xr.management": "4.3.3",
     "com.unity.xr.oculus": "4.0.0",
