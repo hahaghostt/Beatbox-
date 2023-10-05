@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.47680944, g: 0.4914605, b: 0.53042054, a: 1}
+  m_IndirectSpecularColor: {r: 0.47681576, g: 0.49153173, b: 0.53044915, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -186,8 +186,81 @@ Transform:
   m_Children:
   - {fileID: 1163336445}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 184.28, z: 0}
+--- !u!1001 &66012855
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 553dc4bc2612290488bfb9db29c7b1bc, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 553dc4bc2612290488bfb9db29c7b1bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.088
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 553dc4bc2612290488bfb9db29c7b1bc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.73
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 553dc4bc2612290488bfb9db29c7b1bc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.31
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 553dc4bc2612290488bfb9db29c7b1bc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 553dc4bc2612290488bfb9db29c7b1bc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 553dc4bc2612290488bfb9db29c7b1bc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 553dc4bc2612290488bfb9db29c7b1bc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 553dc4bc2612290488bfb9db29c7b1bc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 553dc4bc2612290488bfb9db29c7b1bc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 553dc4bc2612290488bfb9db29c7b1bc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2372753529613340313, guid: 553dc4bc2612290488bfb9db29c7b1bc, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 98108f7bd67dd3a48855aaaf7a9be3f5, type: 2}
+    - target: {fileID: 919132149155446097, guid: 553dc4bc2612290488bfb9db29c7b1bc, type: 3}
+      propertyPath: m_Name
+      value: boxing bag with texture
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721292891169824529, guid: 553dc4bc2612290488bfb9db29c7b1bc, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4ca89b843fc92fd4e97760936c0293f7, type: 2}
+    - target: {fileID: 7721292891169824529, guid: 553dc4bc2612290488bfb9db29c7b1bc, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4ca89b843fc92fd4e97760936c0293f7, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 553dc4bc2612290488bfb9db29c7b1bc, type: 3}
 --- !u!1 &126086356
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,7 +409,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &133318365
 MonoBehaviour:
@@ -569,7 +642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4288596563751672845, guid: 412eb05a00560d449bd1cc078bfc5a35, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4288596563751672845, guid: 412eb05a00560d449bd1cc078bfc5a35, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2038,7 +2111,7 @@ Transform:
   m_Children:
   - {fileID: 126086357}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1947402972
 PrefabInstance:
@@ -2058,7 +2131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4288596563751672845, guid: 412eb05a00560d449bd1cc078bfc5a35, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4288596563751672845, guid: 412eb05a00560d449bd1cc078bfc5a35, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2158,7 +2231,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1975322328
 MonoBehaviour:
@@ -2204,7 +2277,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2062360631
 MonoBehaviour:
@@ -15503,7 +15576,7 @@ Transform:
   - {fileID: 9123694107654257662}
   - {fileID: 2571892724784211288}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3231017302186480538
 Transform:
@@ -18061,7 +18134,7 @@ Transform:
   - {fileID: 1600386475378751532}
   - {fileID: 8750526159555892002}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3735347977690512813
 Transform:
