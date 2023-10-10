@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: oak-herringbone-5e80fb40b00c9-1200
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_Parent: {fileID: 2100000, guid: a9367047a94fd6e47b9a22a6dd892382, type: 2}
+  m_Parent: {fileID: 2100000, guid: 689c6c7e95df417429ec60b3e6b4a637, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []

@@ -36,7 +36,7 @@ MonoBehaviour:
     value: 0
   color:
     overrideState: 1
-    value: {r: 1, g: 1, b: 1, a: 1}
+    value: {r: 1, g: 0.90768784, b: 0.8915094, a: 1}
   fastMode:
     overrideState: 1
     value: 0
@@ -87,7 +87,7 @@ MonoBehaviour:
     defaultState: 1
   tonemapper:
     overrideState: 1
-    value: 0
+    value: 1
   toneCurveToeStrength:
     overrideState: 1
     value: 0
@@ -121,7 +121,7 @@ MonoBehaviour:
     value: 0
   colorFilter:
     overrideState: 1
-    value: {r: 1, g: 1, b: 1, a: 1}
+    value: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
   hueShift:
     overrideState: 1
     value: 0
@@ -166,13 +166,13 @@ MonoBehaviour:
     value: 100
   lift:
     overrideState: 1
-    value: {x: 0.9828193, y: 0.9923932, z: 1, w: 0}
+    value: {x: 0.9677072, y: 1, z: 0.8685924, w: 0}
   gamma:
     overrideState: 1
-    value: {x: 1, y: 1, z: 1, w: 0}
+    value: {x: 0.98352665, y: 0.8844282, z: 1, w: 0}
   gain:
     overrideState: 1
-    value: {x: 0.99026406, y: 1, z: 0.74395514, w: 0}
+    value: {x: 0.9608224, y: 0.9926153, z: 1, w: 0}
   masterCurve:
     overrideState: 1
     value:
