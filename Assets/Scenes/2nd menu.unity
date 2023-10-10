@@ -2167,6 +2167,18 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 846c0f58130a3e348bd7f30645103904, type: 2}
+    - target: {fileID: -5422027444202774153, guid: da36649a9d4b7ed44abce5bb05d853ef, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5300006
+      objectReference: {fileID: 0}
+    - target: {fileID: -5422027444202774153, guid: da36649a9d4b7ed44abce5bb05d853ef, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5300006
+      objectReference: {fileID: 0}
+    - target: {fileID: -5422027444202774153, guid: da36649a9d4b7ed44abce5bb05d853ef, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5300006
+      objectReference: {fileID: 0}
     - target: {fileID: -5367700653010474360, guid: da36649a9d4b7ed44abce5bb05d853ef, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
