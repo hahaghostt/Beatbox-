@@ -8,6 +8,7 @@ TagManager:
   - DestroyableSound
   - UIScoreMultiplier
   - DestroyableTag2
+  - DestroyableTag3
   layers:
   - Default
   - TransparentFX
