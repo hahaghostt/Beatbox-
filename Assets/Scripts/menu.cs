@@ -11,4 +11,9 @@ public class menu : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
         mouseclick.Play();
     }
+
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
 }
