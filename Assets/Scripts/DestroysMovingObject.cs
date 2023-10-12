@@ -11,12 +11,19 @@ public class DestroysMovingObject : MonoBehaviour
 
     public GameObject Src;
     public int pointsToAdd = 10;
+
+    [SerializeField] GameObject Firework; 
     /*
     public GameObject Score;
     public int theScore = 0;
 
     public ScoreSystem score; 
     */ 
+
+    void update()
+    {
+       // Firework part = GetComponent<ParticleSystem>(); 
+    }
 
     
     // This function is called when a collision occurs.
@@ -38,8 +45,16 @@ public class DestroysMovingObject : MonoBehaviour
                 scoreManager.IncreaseScore(pointsToAdd);
             }
 
-            src.Play(); 
+            src.Play();
             // Destroy the object that this script is attached to.
+
+            /* var part = GetComponent<ParticleSystem>();
+            part.Play();
+            Destroy(gameObject, part.main.duration); */
+
+            GameObject explosion = Instantiate(Firework, transform.position, transform.rotation);
+            /* Firework.Play(); */
+            Destroy(explosion, 0.75f); 
             Destroy(gameObject);
         }
         if (collision.gameObject.CompareTag("DestroyableTag2"))

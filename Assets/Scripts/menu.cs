@@ -8,7 +8,7 @@ public class menu : MonoBehaviour
 
     public void NextScene()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Level 1");
         mouseclick.Play();
     }
 
