@@ -52,7 +52,7 @@ public class DestroysMovingObject : MonoBehaviour
             part.Play();
             Destroy(gameObject, part.main.duration); */
 
-            GameObject explosion = Instantiate(Firework, transform.position, transform.rotation);
+            GameObject explosion = Instantiate(Firework, transform.position,  Firework.transform.rotation);
             /* Firework.Play(); */
             Destroy(explosion, 0.75f); 
             Destroy(gameObject);
