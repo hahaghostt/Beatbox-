@@ -51,10 +51,10 @@ public class DestroysMovingObject : MonoBehaviour
     }
 
 
-    // This function is called when a collision occurs.
+    
     public void OnCollisionEnter(Collision collision)
     {
-        // Check if the collision involves a specific tag or layer.
+        
         if (collision.gameObject.CompareTag("DestroyableTag"))
         {
             /* score.AddScore(1); */ 
