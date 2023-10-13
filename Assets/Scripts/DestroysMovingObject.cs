@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.XR;
 
 public class DestroysMovingObject : MonoBehaviour
 {
@@ -12,20 +13,44 @@ public class DestroysMovingObject : MonoBehaviour
     public GameObject Src;
     public int pointsToAdd = 10;
 
-    [SerializeField] GameObject Firework; 
+    [SerializeField] GameObject Firework;
+
     /*
     public GameObject Score;
     public int theScore = 0;
 
     public ScoreSystem score; 
-    */ 
+    */
 
-    void update()
+    public bool isPunching = false;
+    public Vector3 previousPosition;
+
+    void Update()
     {
-       // Firework part = GetComponent<ParticleSystem>(); 
+        // Check for punch motion by calculating the velocity of the controller.
+        XRNode controllerNode = GetControllerNode(this.gameObject);
+        InputDevice device = InputDevices.GetDeviceAtXRNode(controllerNode);
+
+        Vector3 currentPosition;
+        if (device.TryGetFeatureValue(CommonUsages.devicePosition, out currentPosition))
+        {
+            
+            float velocity = (currentPosition - previousPosition).magnitude / Time.deltaTime;
+
+            
+            if (velocity > 2.0f) 
+            {
+                isPunching = true;
+            }
+            else
+            {
+                isPunching = false;
+            }
+            previousPosition = currentPosition;
+        }
     }
 
-    
+
     // This function is called when a collision occurs.
     public void OnCollisionEnter(Collision collision)
     {
@@ -36,9 +61,12 @@ public class DestroysMovingObject : MonoBehaviour
             Src = GameObject.FindWithTag("DestroyableSound");
 
             src = Src.GetComponent<AudioSource>();
-            /*  Score = GameObject.FindWithTag("UIScoreMultiplier");
-              theScore += 1;
-             Score.GetComponent<Text>().text = "0" + theScore; */
+
+            XRNode controllerNode = GetControllerNode(this.gameObject);
+            InputDevice device = InputDevices.GetDeviceAtXRNode(controllerNode);
+            device.SendHapticImpulse(0, 0.5f, 0.1f);
+
+
             ScoreManager scoreManager = GameObject.FindObjectOfType<ScoreManager>();
             if (scoreManager != null)
             {
@@ -46,11 +74,6 @@ public class DestroysMovingObject : MonoBehaviour
             }
 
             src.Play();
-            // Destroy the object that this script is attached to.
-
-            /* var part = GetComponent<ParticleSystem>();
-            part.Play();
-            Destroy(gameObject, part.main.duration); */
 
             GameObject explosion = Instantiate(Firework, transform.position,  Firework.transform.rotation);
             /* Firework.Play(); */
@@ -61,5 +84,18 @@ public class DestroysMovingObject : MonoBehaviour
         {
             Destroy(gameObject); 
         }
+    }
+    private XRNode GetControllerNode(GameObject controller)
+    {
+        if (controller.name.Contains("Right"))
+        {
+            return XRNode.RightHand;
+        }
+        else if (controller.name.Contains("Left"))
+        {
+            return XRNode.LeftHand;
+        }
+        // Return the default value if not found
+        return XRNode.RightHand;
     }
 }
