@@ -5,22 +5,35 @@ using UnityEngine;
 public class MitSpawner : MonoBehaviour
 {
     public GameObject mits1Prefab;
-    public float spawnInterval = 1.0f;  // Adjust the spawn interval as needed.
-    private float timeSinceLastSpawn = 0.0f;
+    public float beatInterval = 1.0f;  // Time between beats in seconds
+    public float bpm = 160;            // Beats per minute
+    public float startDelay = 2.0f;   // Delay before the first beat
+    public float scrollSpeed = 5.0f;  // Speed at which the objects scroll forward
+
+    private float nextBeatTime;
+
+    void Start()
+    {
+        nextBeatTime = startDelay;
+    }
 
     void Update()
     {
-        timeSinceLastSpawn += Time.deltaTime;
-        if (timeSinceLastSpawn >= spawnInterval)
+        if (Time.time >= nextBeatTime)
         {
-            SpawnObject();
-            timeSinceLastSpawn = 0.0f;
+            // Spawn the mits
+            GameObject beatInstance = Instantiate(mits1Prefab, transform.position, Quaternion.identity);
+
+            
+            Rigidbody rb = beatInstance.GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                rb.velocity = transform.forward * scrollSpeed;
+            }
+
+            
+            float beatDuration = 60.0f / bpm;
+            nextBeatTime += beatDuration;
         }
     }
-
-    void SpawnObject()
-    {
-        // Instantiate a new object from the prefab at the spawner's position.
-        GameObject newObject = Instantiate(mits1Prefab, transform.position, Quaternion.identity);
-    }
-}
+} 

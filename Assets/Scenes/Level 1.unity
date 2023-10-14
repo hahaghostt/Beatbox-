@@ -1046,7 +1046,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mits1Prefab: {fileID: 2967979846328689184, guid: 412eb05a00560d449bd1cc078bfc5a35, type: 3}
-  spawnInterval: 4
+  beatInterval: 12
+  bpm: 160
+  startDelay: 4
+  scrollSpeed: 15
 --- !u!1001 &146802576
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7670,7 +7673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdownText: {fileID: 1347858618}
-  totalTime: 5
+  totalTime: 111
   canvas: {fileID: 360401470}
 --- !u!1 &1428126630
 GameObject:
@@ -9735,7 +9738,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mits1Prefab: {fileID: 6205991769853174231, guid: 42d381576a14bf1409549187d73d1d35, type: 3}
-  spawnInterval: 2
+  beatInterval: 16
+  bpm: 160
+  startDelay: 10
+  scrollSpeed: 6
 --- !u!1001 &2070539913
 PrefabInstance:
   m_ObjectHideFlags: 0
