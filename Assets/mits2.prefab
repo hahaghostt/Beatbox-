@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 92534e53955fe494f9a01bb903fb5a59, type: 2}
+  - {fileID: 2100000, guid: c1e6a811687fd1a4eac845cc3cc47b43, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -173,7 +173,7 @@ MonoBehaviour:
   sfx1: {fileID: 8300000, guid: c84da90360d59fc4abe5193d3523a217, type: 3}
   Src: {fileID: 0}
   pointsToAdd: 10
-  Firework: {fileID: 2181423604645459420, guid: ac90cfff0db521a46a9dad5027211bfe, type: 3}
+  Firework: {fileID: 2181423604645459420, guid: 128e4d3003a6ebc488acc9260962ee56, type: 3}
   isPunching: 0
   previousPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &-1317504916592932127

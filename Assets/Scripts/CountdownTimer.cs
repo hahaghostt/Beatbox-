@@ -6,16 +6,19 @@ using TMPro;
 public class CountdownTimer : MonoBehaviour
 {
     public TMP_Text countdownText;
-    public float totalTime = 60.0f; 
-
+    public float totalTime = 60.0f;
     private float currentTime;
-    // Start is called before the first frame update
+    public Canvas canvas; 
+
+
+   
     void Start()
     {
-        currentTime = totalTime; 
+        currentTime = totalTime;
+        canvas.enabled = false;
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         currentTime -= Time.deltaTime;
@@ -25,7 +28,10 @@ public class CountdownTimer : MonoBehaviour
 
         if (currentTime <= 0)
         {
-            Debug.Log("Countdown Finish"); 
+            Debug.Log("Countdown Finish");
+            PauseGame();
+            ShowEndUI(); 
+
         }
     }
 
@@ -33,5 +39,15 @@ public class CountdownTimer : MonoBehaviour
     {
         int seconds = Mathf.CeilToInt(currentTime);
         countdownText.text = "TIMER:" + seconds.ToString(); 
+    }
+
+    void PauseGame()
+    {
+        Time.timeScale = 0;
+    }
+
+    void ShowEndUI()
+    {
+        canvas.enabled = true; 
     }
 }

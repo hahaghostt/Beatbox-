@@ -8,6 +8,7 @@ public class menu : MonoBehaviour
 
     public void NextScene()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Level 1");
         mouseclick.Play();
     }

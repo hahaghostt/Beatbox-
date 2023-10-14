@@ -9,9 +9,10 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 2
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_Parent: {fileID: 2100000, guid: 82a7d0e2d6dcc7a40affb55b95a62751, type: 2}
+  m_Parent: {fileID: 2100000, guid: c1e6a811687fd1a4eac845cc3cc47b43, type: 2}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _EMISSION
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -26,5 +27,6 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 0.6704478, g: 0, b: 1, a: 1}
+    - _Color: {r: 0, g: 0.005622387, b: 1, a: 1}
+    - _EmissionColor: {r: 0.060456283, g: 0.20489684, b: 3.8490572, a: 1}
   m_BuildTextureStacks: []
