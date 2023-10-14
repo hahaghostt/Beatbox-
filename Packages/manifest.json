@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.unity.formats.fbx": "4.2.1",
     "com.unity.postprocessing": "3.2.2",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.xr.interaction.toolkit": "2.4.3",
