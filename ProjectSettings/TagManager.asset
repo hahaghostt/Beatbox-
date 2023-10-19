@@ -9,6 +9,8 @@ TagManager:
   - UIScoreMultiplier
   - DestroyableTag2
   - DestroyableTag3
+  - DestroyableTag4
+  - DestroyableTag5
   layers:
   - Default
   - TransparentFX

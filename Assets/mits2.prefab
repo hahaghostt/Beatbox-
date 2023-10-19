@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 6120940913118621268}
   - component: {fileID: 2329691594843948191}
   - component: {fileID: 8734497146747006277}
-  - component: {fileID: 4032992078163293188}
   - component: {fileID: -1317504916592932127}
+  - component: {fileID: 4535417752512128917}
   m_Layer: 0
   m_Name: mits2
   m_TagString: Untagged
@@ -157,25 +157,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1658581, y: 0.23552, z: 0.09}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4032992078163293188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2967979846328689184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3386bf98f90f964c82b9a8f02257c85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  src: {fileID: 2371706142465341915, guid: f9d1bfcde401ae14f85a1191b64a0595, type: 3}
-  sfx1: {fileID: 8300000, guid: c84da90360d59fc4abe5193d3523a217, type: 3}
-  Src: {fileID: 0}
-  pointsToAdd: 10
-  Firework: {fileID: 2181423604645459420, guid: 128e4d3003a6ebc488acc9260962ee56, type: 3}
-  isPunching: 0
-  previousPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &-1317504916592932127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,3 +170,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.5
+--- !u!114 &4535417752512128917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2967979846328689184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d00983347e39e25448527289bbbd254f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  src: {fileID: 2371706142465341915, guid: f9d1bfcde401ae14f85a1191b64a0595, type: 3}
+  sfx1: {fileID: 8300000, guid: c84da90360d59fc4abe5193d3523a217, type: 3}
+  Src: {fileID: 0}
+  pointsToAdd: 10
+  Firework: {fileID: 2181423604645459420, guid: ac90cfff0db521a46a9dad5027211bfe, type: 3}
+  isPunching: 0
+  previousPosition: {x: 0, y: 0, z: 0}
