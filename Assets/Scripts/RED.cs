@@ -22,33 +22,10 @@ public class RED : MonoBehaviour
     public ScoreSystem score; 
     */
 
-    public bool isPunching = false;
-    public Vector3 previousPosition;
-
-    void Update()
-    {
-        // Check for punch motion by calculating the velocity of the controller.
-        XRNode controllerNode = GetControllerNode(this.gameObject);
-        InputDevice device = InputDevices.GetDeviceAtXRNode(controllerNode);
-
-        Vector3 currentPosition;
-        if (device.TryGetFeatureValue(CommonUsages.devicePosition, out currentPosition))
-        {
-
-            float velocity = (currentPosition - previousPosition).magnitude / Time.deltaTime;
+    public GameObject xrController;
 
 
-            if (velocity > 2.0f)
-            {
-                isPunching = true;
-            }
-            else
-            {
-                isPunching = false;
-            }
-            previousPosition = currentPosition;
-        }
-    }
+
 
 
 
@@ -65,6 +42,12 @@ public class RED : MonoBehaviour
             XRNode controllerNode = GetControllerNode(this.gameObject);
             InputDevice device = InputDevices.GetDeviceAtXRNode(controllerNode);
             device.SendHapticImpulse(0, 0.5f, 0.1f);
+
+            /*if (IsPunch())
+            {
+                // Handle the punch action
+                HandlePunch(collision.gameObject);
+            } */ 
 
 
             ScoreManager scoreManager = GameObject.FindObjectOfType<ScoreManager>();
@@ -85,6 +68,31 @@ public class RED : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    /* private bool IsPunch()
+    {
+        XRNode controllerNode = GetControllerNode(xrController);
+        InputDevice device = InputDevices.GetDeviceAtXRNode(controllerNode);
+
+        
+        // For example, you can use device.TryGetFeatureValue to check the controller's velocity
+        /* Vector3 velocity;
+        if (device.TryGetFeatureValue(CommonUsages.velocity, out velocity))
+        {
+            // Adjust the threshold and direction according to your needs
+            float punchThreshold = 2.0f;
+            Vector3 punchDirection = Vector3.forward;
+
+            if (Vector3.Dot(velocity, punchDirection) > punchThreshold)
+            {
+                return true;
+            }
+        }
+
+        return false; 
+    } */ 
+
+ 
     private XRNode GetControllerNode(GameObject controller)
     {
         if (controller.name.Contains("Right"))

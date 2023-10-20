@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 323239929823883651}
   - component: {fileID: 6979824145279679317}
   - component: {fileID: -7323307910786627603}
-  - component: {fileID: -915028247613790995}
+  - component: {fileID: -2886806661172959243}
   m_Layer: 0
   m_Name: mits1 1
   m_TagString: Untagged
@@ -4987,7 +4987,7 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!114 &-915028247613790995
+--- !u!114 &-2886806661172959243
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4996,13 +4996,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6205991769853174231}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9d7ca6bba789ac4e8f6088ec3202153, type: 3}
+  m_Script: {fileID: 11500000, guid: eaf5125cbea9d0d47b34f04ef8494aeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  src: {fileID: 2371706142465341915, guid: f9d1bfcde401ae14f85a1191b64a0595, type: 3}
   sfx1: {fileID: 8300000, guid: c84da90360d59fc4abe5193d3523a217, type: 3}
-  Src: {fileID: 0}
   pointsToAdd: 10
-  Firework: {fileID: 2181423604645459420, guid: 128e4d3003a6ebc488acc9260962ee56, type: 3}
-  isPunching: 0
-  previousPosition: {x: 0, y: 0, z: 0}
+  Firework: {fileID: 2181423604645459420, guid: ac90cfff0db521a46a9dad5027211bfe, type: 3}
