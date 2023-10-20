@@ -43,7 +43,7 @@ public class RED2 : MonoBehaviour
 
     private void HandlePunch()
     {
-        Collider[] hitColliders = Physics.OverlapSphere(transform.position, 0.5f);
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, 0.3f);
 
         foreach (Collider hitCollider in hitColliders)
         {

@@ -45,7 +45,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2967979846328689184}
-  m_Mesh: {fileID: 5302568919011541938, guid: b81fbfa81d22480418b817d50fcbe6cc, type: 3}
+  m_Mesh: {fileID: 6329158148709259305, guid: 7bf92f69de6745141850b544757d185a, type: 3}
 --- !u!23 &7042999330487687701
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c1e6a811687fd1a4eac845cc3cc47b43, type: 2}
+  - {fileID: 2100000, guid: 227678331e791f94a9ebcfd22b2d9d0e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -186,6 +186,6 @@ MonoBehaviour:
   sfx1: {fileID: 8300000, guid: c84da90360d59fc4abe5193d3523a217, type: 3}
   Src: {fileID: 0}
   pointsToAdd: 10
-  Firework: {fileID: 2181423604645459420, guid: ac90cfff0db521a46a9dad5027211bfe, type: 3}
+  Firework: {fileID: 2181423604645459420, guid: 128e4d3003a6ebc488acc9260962ee56, type: 3}
   isPunching: 0
   previousPosition: {x: 0, y: 0, z: 0}

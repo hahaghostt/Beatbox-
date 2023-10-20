@@ -41,7 +41,7 @@ public class RED : MonoBehaviour
 
             XRNode controllerNode = GetControllerNode(this.gameObject);
             InputDevice device = InputDevices.GetDeviceAtXRNode(controllerNode);
-            device.SendHapticImpulse(0, 0.5f, 0.1f);
+            device.SendHapticImpulse(0, 0.5f, 0.5f);
 
             /*if (IsPunch())
             {

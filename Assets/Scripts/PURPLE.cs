@@ -64,7 +64,7 @@ public class Purple : MonoBehaviour
 
             XRNode controllerNode = GetControllerNode(this.gameObject);
             InputDevice device = InputDevices.GetDeviceAtXRNode(controllerNode);
-            device.SendHapticImpulse(0, 0.5f, 0.1f);
+            device.SendHapticImpulse(0, 0.5f, 0.5f);
 
 
             ScoreManager scoreManager = GameObject.FindObjectOfType<ScoreManager>();
@@ -87,15 +87,15 @@ public class Purple : MonoBehaviour
     }
     private XRNode GetControllerNode(GameObject controller)
     {
-        if (controller.name.Contains("Right"))
-        {
-            return XRNode.RightHand;
-        }
-        else if (controller.name.Contains("Left"))
+        if (controller.name.Contains("Left"))
         {
             return XRNode.LeftHand;
         }
+        else if (controller.name.Contains("Right"))
+        {
+            return XRNode.RightHand;
+        }
         // Return the default value if not found
-        return XRNode.RightHand;
+        return XRNode.LeftHand;
     }
 }
