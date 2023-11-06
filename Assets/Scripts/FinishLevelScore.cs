@@ -13,7 +13,13 @@ public class FinishLevelScore : MonoBehaviour
         Time.timeScale = 1;
         mainMenuCanvas.enabled = false;
         SceneManager.LoadScene("2nd Menu");
-
-        
     }
+
+    public void ContinueToNextLevel()
+    {
+        SceneManager.LoadScene("Level 2"); 
+
+    }
+
+
 }

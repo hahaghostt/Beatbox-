@@ -8,10 +8,13 @@ public class CountdownTimer : MonoBehaviour
     public TMP_Text countdownText;
     public float totalTime = 60.0f;
     private float currentTime;
-    public Canvas canvas; 
+    public Canvas canvas;
+    public AudioSource goodjob;
+    public AudioClip sfx3;
+    public GameObject Goodjob; 
 
 
-   
+
     void Start()
     {
         currentTime = totalTime;
@@ -48,6 +51,9 @@ public class CountdownTimer : MonoBehaviour
 
     void ShowEndUI()
     {
-        canvas.enabled = true; 
+        canvas.enabled = true;
+       /* GoodJob  = GameObject.FindWithTag("GoodJob2");
+
+        goodjob = GoodJob.GetComponent<AudioSource>(); */ 
     }
 }

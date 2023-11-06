@@ -11,6 +11,8 @@ TagManager:
   - DestroyableTag3
   - DestroyableTag4
   - DestroyableTag5
+  - GoodJob
+  - GoodJob2
   layers:
   - Default
   - TransparentFX
