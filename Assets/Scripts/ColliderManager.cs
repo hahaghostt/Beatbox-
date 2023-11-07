@@ -23,7 +23,7 @@ public class ColliderManager : MonoBehaviour
             if (touchCount >= requiredTouches)
             {
                
-                SceneManager.LoadScene("YourSceneName");
+                SceneManager.LoadScene("Fail");
             }
 
      
