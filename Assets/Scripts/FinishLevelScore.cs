@@ -5,10 +5,13 @@ using System.Collections.Generic;
 
 public class FinishLevelScore : MonoBehaviour
 {
-    // Add this function to a button's click event or a trigger event in your game.
     public Canvas mainMenuCanvas;
-    public GameObject SceneStart; 
+    public GameObject SceneStart;
 
+    // Add a reference to your GameObject that starts the game.
+    public GameObject gameStarter;
+
+    // Add this function to a button's click event or a trigger event in your game.
     public void GoToMainMenu()
     {
         Time.timeScale = 1;
@@ -19,37 +22,50 @@ public class FinishLevelScore : MonoBehaviour
     public void ContinueToNextLevel()
     {
         Time.timeScale = 1;
-        ReplayGame(); 
         SceneManager.LoadScene("Level 2");
         Debug.Log("BUTTON PRESSED");
-        Time.timeScale = 1;
-        ReplayGame(); 
-        mainMenuCanvas.enabled = true;
-
     }
 
     public void RetryAgain()
     {
-        SceneManager.LoadScene("Level 1"); 
+        SceneManager.LoadScene("Level 1");
     }
 
     public void Credits()
     {
-        SceneManager.LoadScene("Credits"); 
+        SceneManager.LoadScene("Credits");
     }
 
     void ReplayGame()
     {
-        Time.timeScale = 1; 
+        Time.timeScale = 1;
     }
 
     void PlayGame()
     {
-        Time.timeScale = 1; 
+        Time.timeScale = 1;
     }
 
+    // Add a method to start the game and unpause it.
+    public void StartGameAndUnpause()
+    {
+        // Start the game or do any necessary setup.
+        // For example, you can activate your SceneStart GameObject here if needed.
+        if (gameStarter != null)
+        {
+            gameStarter.SetActive(true);
+        }
 
+        // Unpause the game by setting Time.timeScale to 1.
+        Time.timeScale = 1;
+    }
 
-    // 156 
-    // 141
+    // Automatically unpause the scene when it loads.
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
+
+    // 156
+    // 144
 }
