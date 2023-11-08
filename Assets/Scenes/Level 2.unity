@@ -12913,7 +12913,7 @@ MonoBehaviour:
   mits1Prefab: {fileID: 6205991769853174231, guid: 42d381576a14bf1409549187d73d1d35, type: 3}
   beatInterval: 80
   bpm: 45
-  startDelay: 160
+  startDelay: 150
   scrollSpeed: 6
 --- !u!4 &759739220
 Transform:
