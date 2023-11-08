@@ -13,4 +13,9 @@ public class CreditToGame : MonoBehaviour
             SceneManager.LoadScene("2nd menu");
         }
     }
+
+    public void Menu2()
+    {
+        SceneManager.LoadScene("2nd menu");
+    }
 }

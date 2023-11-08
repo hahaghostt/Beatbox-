@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -446,7 +446,7 @@ MonoBehaviour:
   mits1Prefab: {fileID: 2967979846328689184, guid: 412eb05a00560d449bd1cc078bfc5a35, type: 3}
   beatInterval: 1000
   bpm: 22.5
-  startDelay: 10
+  startDelay: 180
   scrollSpeed: 10
 --- !u!4 &24250863
 Transform:
@@ -12913,7 +12913,7 @@ MonoBehaviour:
   mits1Prefab: {fileID: 6205991769853174231, guid: 42d381576a14bf1409549187d73d1d35, type: 3}
   beatInterval: 80
   bpm: 45
-  startDelay: 24
+  startDelay: 160
   scrollSpeed: 6
 --- !u!4 &759739220
 Transform:
@@ -24037,7 +24037,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404222232}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 878f0c2b8cadcdf40a055d70a60deb0e, type: 3}
   m_Name: 
