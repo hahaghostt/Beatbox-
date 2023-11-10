@@ -3292,7 +3292,7 @@ MonoBehaviour:
   mits1Prefab: {fileID: 2967979846328689184, guid: 412eb05a00560d449bd1cc078bfc5a35, type: 3}
   beatInterval: 1000
   bpm: 21.5
-  startDelay: 30
+  startDelay: 70
   scrollSpeed: 12
 --- !u!1001 &146802576
 PrefabInstance:
@@ -19780,7 +19780,7 @@ MonoBehaviour:
   mits1Prefab: {fileID: 6205991769853174231, guid: 42d381576a14bf1409549187d73d1d35, type: 3}
   beatInterval: 80
   bpm: 43
-  startDelay: 50
+  startDelay: 90
   scrollSpeed: 6
 --- !u!1001 &2070539913
 PrefabInstance:

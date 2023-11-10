@@ -26,7 +26,7 @@ public class menu : MonoBehaviour
        if (timeElapsed > delayafterscene)
        {
             Debug.Log("Play Next Scene");
-            SceneManager.LoadScene("Level 1");
+            SceneManager.LoadScene("Cutscene");
         }
             
     

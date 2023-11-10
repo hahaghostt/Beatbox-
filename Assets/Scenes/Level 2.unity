@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -446,7 +446,7 @@ MonoBehaviour:
   mits1Prefab: {fileID: 2967979846328689184, guid: 412eb05a00560d449bd1cc078bfc5a35, type: 3}
   beatInterval: 1000
   bpm: 22.5
-  startDelay: 180
+  startDelay: 220
   scrollSpeed: 10
 --- !u!4 &24250863
 Transform:
@@ -12913,7 +12913,7 @@ MonoBehaviour:
   mits1Prefab: {fileID: 6205991769853174231, guid: 42d381576a14bf1409549187d73d1d35, type: 3}
   beatInterval: 80
   bpm: 45
-  startDelay: 150
+  startDelay: 190
   scrollSpeed: 6
 --- !u!4 &759739220
 Transform:
