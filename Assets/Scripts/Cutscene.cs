@@ -1,18 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; 
 
 public class Cutscene : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float delayInSeconds = 5f; 
+
     void Start()
     {
-        
+        Invoke("LoadNextScene", delayInSeconds);
     }
 
-    // Update is called once per frame
-    void Update()
+    void LoadNextScene()
     {
         
+        SceneManager.LoadScene("Level 1");
     }
 }
