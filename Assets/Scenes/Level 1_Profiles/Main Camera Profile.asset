@@ -18,13 +18,13 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 6
+    value: 10
   threshold:
     overrideState: 1
     value: 1.39
   softKnee:
     overrideState: 1
-    value: 0.5
+    value: 0.477
   clamp:
     overrideState: 1
     value: 65472
@@ -80,10 +80,10 @@ MonoBehaviour:
     value: 100
   distanceFade:
     overrideState: 1
-    value: 0.416
+    value: 1
   vignette:
     overrideState: 1
-    value: 0.5
+    value: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,7 +173,7 @@ MonoBehaviour:
     defaultState: 1
   intensity:
     overrideState: 1
-    value: 0.046
+    value: 0.468
   fastMode:
     overrideState: 1
     value: 0
@@ -230,10 +230,10 @@ MonoBehaviour:
     value: 1
   temperature:
     overrideState: 1
-    value: 0
+    value: 16
   tint:
     overrideState: 1
-    value: 0
+    value: 6
   colorFilter:
     overrideState: 1
     value: {r: 1, g: 1, b: 1, a: 1}
@@ -281,7 +281,7 @@ MonoBehaviour:
     value: 100
   lift:
     overrideState: 1
-    value: {x: 0.9551981, y: 0.97687936, z: 1, w: 0}
+    value: {x: 0.9722973, y: 0.98444444, z: 1, w: 0}
   gamma:
     overrideState: 1
     value: {x: 1, y: 0.9670093, z: 0.7118704, w: 0}
