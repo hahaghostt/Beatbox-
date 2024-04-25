@@ -20278,11 +20278,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95c9cf2ebc4ebef40956430ec1bb09a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiredItems: 3
-  counterProgess: {fileID: 1115003931}
-  unwantedItems: 0
-  nextLevel: 4
-  counterText: 
 --- !u!65 &2077899348
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20353,7 +20348,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2077899346}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 0}
 --- !u!4 &2077899351
 Transform:
   m_ObjectHideFlags: 0
